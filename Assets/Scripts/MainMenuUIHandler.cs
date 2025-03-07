@@ -16,7 +16,7 @@ public class MainUIHandler : MonoBehaviour
     {
         // Load player name from PlayerPrefs
         string playerName = PlayerPrefs.GetString("PlayerName", "Unknown");
-        playerNameText.text = "Player: " + playerName;
+        playerNameText.text = playerName;
 
         // Load high score
         highScore = PlayerPrefs.GetInt("HighScore", 0);
